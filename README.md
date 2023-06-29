@@ -6,11 +6,11 @@ You can add more wallets in the "Wallet-container.tsx" file.
 
 ## App link
 
-TBA
+https://sol-balance-checker-zeta.vercel.app/
 
 ## Local start
 ```
-git clone TBA
+git clone https://github.com/ilyxabatko/sol-balance-checker && cd sol-balance-checker
 npm install 
 npm start
 ```
