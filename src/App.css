@@ -1,38 +1,95 @@
 .App {
-  text-align: center;
+    text-align: center;
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+    height: 20vmin;
+    pointer-events: none;
+    margin: 10px auto;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+    background-image: url("background-image.webp");
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: #512da8;
+}
+
+.App-header-container {
+    width: 60vw;
+    max-width: 500px;
+    min-height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: rgb(229, 209, 224);
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.4);
+}
+
+.button-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.header-h1 {
+    text-align: center;
+    margin: 10px auto;
+}
+
+.balance-div {
+    align-items: center;
+}
+
+.balance-p {
+    font-weight: bold;
+    margin: 10px auto;
+    font-size: calc(40px + 2vmin);
+    padding-left: 17px;
+    color: black;
+}
+
+.header-image-container {
+    width: 30vw;
+    height: 10vw;
+    background-image: url("./doges.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 2px solid #512da8;
+    border-radius: 4px;
+    margin: 10px auto;
+}
+
+.wallet-adapter-button {
+    width: 18vw; 
+    min-width: 200px; 
+    display: flex;
+    justify-content: center; 
+    overflow: hidden;
+    font-size: 2vmin;
 }
 
 .App-link {
-  color: #61dafb;
+    color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media (max-width: 768px) {
+    .wallet-adapter-button {
+        font-size: 15px;
+    }
+
+    .header-image-container {
+        width: 50vw;
+        height: 15vw;
+    }
 }

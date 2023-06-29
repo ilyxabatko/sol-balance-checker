@@ -1,26 +1,17 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { FC } from 'react';
+import Wallet from "./components/Wallet-container";
+import Balance from "./components/Balance";
+import Header from "./components/Header";
+require('./App.css');
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
-
+// presentational component
+const App: FC = () => {
+    return (
+        <Wallet>
+            <Header>
+                <Balance />
+            </Header>
+        </Wallet>
+    );
+};
 export default App;
