@@ -1,16 +1,16 @@
 import React, { FC } from 'react';
 import Wallet from "./components/Wallet-container";
 import Balance from "./components/Balance";
-import Header from "./components/Header";
+import BalanceWindow from './components/BalanceWindow';
 require('./App.css');
 
 // presentational component
 const App: FC = () => {
     return (
         <Wallet>
-            <Header>
+            <BalanceWindow>
                 <Balance />
-            </Header>
+            </BalanceWindow>
         </Wallet>
     );
 };

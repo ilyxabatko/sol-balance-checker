@@ -1,8 +1,9 @@
 import { useConnection, useWallet } from '@solana/wallet-adapter-react';
 import { LAMPORTS_PER_SOL } from '@solana/web3.js';
 import { FC, useEffect, useState } from 'react'
-import dogesImg from "../doges.jpeg";
 
+/* Component that fetches account data using a Pubkey that was connected via the adapter and displays the balance.
+It will be re-rendered in case a connection (endpoint) or a pubkey (connected wallet) are changed*/
 const Balance: FC = () => {
     const [balance, setBalance] = useState(0);
     const { connection } = useConnection();

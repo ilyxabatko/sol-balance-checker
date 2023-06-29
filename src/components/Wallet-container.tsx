@@ -5,6 +5,8 @@ import * as web3 from '@solana/web3.js'
 import { PhantomWalletAdapter, BackpackWalletAdapter, SolflareWalletAdapter } from '@solana/wallet-adapter-wallets';
 require('@solana/wallet-adapter-react-ui/styles.css')
 
+/* The component is basically a container for the adapter implementation. 
+Here you can pick a list of wallet that are supported by the app and an endpoint (even a custom RPC url)*/
 const WalletContextProvider: FC<{ children: ReactNode }> = ({ children }) => {
     const wallets = [
         new PhantomWalletAdapter(),

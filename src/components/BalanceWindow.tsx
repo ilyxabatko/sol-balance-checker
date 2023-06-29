@@ -1,7 +1,8 @@
 import { FC, ReactNode } from 'react';
 import { WalletMultiButton } from '@solana/wallet-adapter-react-ui';
 
-const Header: FC<{ children: ReactNode }> = ({ children }) => {
+// Presentational component that displays the h1, Balance component and WalletButton.
+const BalanceWindow: FC<{ children: ReactNode }> = ({ children }) => {
     return (
         <div className="App-header">
             <div className="App-header-container">
@@ -15,4 +16,4 @@ const Header: FC<{ children: ReactNode }> = ({ children }) => {
     )
 }
 
-export default Header;
+export default BalanceWindow;
