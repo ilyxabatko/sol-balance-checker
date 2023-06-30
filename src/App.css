@@ -61,6 +61,8 @@
 .header-image-container {
     width: 30vw;
     height: 10vw;
+    max-width: 450px;
+    overflow: auto;
     background-image: url("./doges.png");
     background-position: center;
     background-size: cover;
@@ -71,10 +73,10 @@
 }
 
 .wallet-adapter-button {
-    width: 18vw; 
-    min-width: 200px; 
+    width: 18vw;
+    min-width: 200px;
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     overflow: hidden;
     font-size: 2vmin;
 }
@@ -91,5 +93,18 @@
     .header-image-container {
         width: 50vw;
         height: 15vw;
+    }
+}
+
+@media (min-width: 1440px) {
+    .header-image-container {
+        width: 400px;
+        height: 130px;
+        box-sizing: border-box;
+    }
+
+    .wallet-adapter-button {
+        font-size: 20px;
+        width: 400px;
     }
 }
